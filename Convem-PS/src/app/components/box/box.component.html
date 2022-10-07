@@ -3,8 +3,8 @@
       <p>Ei! Você  quer se juntar ao time da {{ empresa }}?</p>
   </div>
   <div id="input-text">
-      <input type="text" name="lineedit" id="lineedit" placeholder="Resposta"  maxlength="20" required>
+      <input type="text" [(ngModel)]="value" name="lineedit" id="lineedit" placeholder="Resposta"  maxlength="20"  required>
   </div>
   <div id="input-button">
-      <button id="button">Enviar</button>
+      <button id="button" (click)="button_click()">Enviar</button>
   </div>
