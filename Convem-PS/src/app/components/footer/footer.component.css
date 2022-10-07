@@ -1,8 +1,8 @@
-#conteiner{
-  width: 100vw;
-  height: 50vh;
-  background: #1C2433;
+#footer{
+  color: white;
+  font-size: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 70px;
 }
