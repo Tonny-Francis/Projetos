@@ -1,0 +1,46 @@
+#box{
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid #68CAD1;
+}
+#text{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#input-text{
+  margin-bottom: 15px;;
+
+}
+#input-button{
+  margin-bottom: 15px;
+
+}
+#lineedit{
+  text-align: center;
+  border: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 12px;
+  border-bottom: 1px solid #68CAD1;
+  outline: 0;
+
+}
+#lineedit:hover{
+  border-bottom: 1px solid #1C2433;
+
+}
+#button{
+  background-color: #68CAD1;
+  border: 0;
+  border-radius: 15px;
+  border: 2px solid #68CAD1;
+  padding: 5px 15px;
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  transition: 0.5s;
+}
+#button:hover{
+  background-color: white;
+  color:#68CAD1;
+}
