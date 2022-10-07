@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./top-bar.component.css']
 })
 export class TopBarComponent implements OnInit {
-
+  logo: string ="../../../assets/Logo.png"
   constructor() { }
 
   ngOnInit(): void {

@@ -1,3 +1,19 @@
 <div id="footer">
-  <p>&copy;Convem Stores</p>
+  <div id="redes">
+    <a [href]="facebook[0]" target="_blank">
+      <img [src]="facebook[1]" alt="Icon facebook">
+    </a>
+    <a [href]="instagram[0]" target="_blank">
+      <img [src]="instagram[1]" alt="Icon instagram">
+    </a>
+    <a [href]="linkedin[0]" target="_blank">
+      <img [src]="linkedin[1]" alt="Icon linkedin">
+    </a>
+    <a [href]="website[0]" target="_blank">
+      <img [src]="website[1]" alt="Icon website">
+    </a>
+  </div>
+  <div id="direitos">
+    <p>&copy;{{ empresa }}</p>
+  </div>
 </div>

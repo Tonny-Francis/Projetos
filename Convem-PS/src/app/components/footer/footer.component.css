@@ -1,8 +1,24 @@
 #footer{
   color: white;
   font-size: 15px;
+
+  margin-top: 40px;
+}
+#redes{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 70px;
+}
+#direitos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a{
+  margin-right: 10px;
+}
+@media only screen and (max-width: 600px) {
+  #footer{
+      margin-top: -85px;
+  }
 }

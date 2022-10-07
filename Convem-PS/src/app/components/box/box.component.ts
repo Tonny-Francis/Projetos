@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./box.component.css']
 })
 export class BoxComponent implements OnInit {
-
+  empresa:string = 'Convem';
   constructor() { }
 
   ngOnInit(): void {
