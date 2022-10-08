@@ -12,12 +12,13 @@ import { ThisReceiver } from '@angular/compiler';
 
 export class BoxComponent implements OnInit {
   //Variáveis para interpolação
-  empresa: String = 'Convem';
-  busca: any = 'sucesso';
-  value: String = '';
+  empresa: string = 'Convem';
+  busca: string = 'data 2';
+  erro: string = 'Erro'
+  value: string = '';
   interface: Data[] = [];
   bool: boolean = false;
-  tamanho: Number = 0;
+  valueCompared: string = 'sim';
 
   constructor(private apiservice: ApiService) {}
 
@@ -25,18 +26,17 @@ export class BoxComponent implements OnInit {
 
   //Funções
   button_click(){
-    if(this.value.toLowerCase() == 'sim'){
+    if(this.value.toLowerCase() == this.valueCompared){
       //Devemos chamar a API Rest e consultar a base de dados contendo a palavra sucesso
       this.getData()
       setTimeout(() => {
         this.filter()
-        console.log(this.bool)
       }, 1000);
     }
     else{
       //Mensagem de erro
       this.bool = false;
-      alert('Erro')
+      alert(this.erro)
     }
   }
   getData(): void{
@@ -50,7 +50,7 @@ export class BoxComponent implements OnInit {
     })
     for(let dado of this.interface)
     {
-      if(dado.data == 'data 2')
+      if(dado.data == this.busca)
         this.bool = true;
       else
         this.bool = false;
