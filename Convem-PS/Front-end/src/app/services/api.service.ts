@@ -8,7 +8,7 @@ import { Data } from '../interfaces/Data';
   providedIn: 'root'
 })
 export class ApiService {
-  private apiUrl: string = 'https://633f2d4c0dbc3309f3c64f7d.mockapi.io/api/v1/resposta'
+  private apiUrl: string = 'url'
   constructor(private http: HttpClient) { }
 
   getAll(): Observable<Data[]>{
