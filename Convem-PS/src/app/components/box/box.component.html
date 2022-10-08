@@ -9,8 +9,4 @@
       <button id="button" (click)="button_click()">Enviar</button>
   </div>
 </div>
-<ul>
-  <li *ngFor="let animal of data">
-    data: {{ animal.data }} - id {{ animal.id}}
-  </li>
-</ul>
+<p id="lista" *ngIf="bool == true">sucesso</p>
