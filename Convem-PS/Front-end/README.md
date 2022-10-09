@@ -6,3 +6,10 @@
 <p align="Center">O intuito dessa aplicação é criar uma página web onde o usuário possa responder uma 
 pergunta simples e dependendo da sua resposta realizar uma ação, utilizando o framework Angular e uma API.
 </p>
+<ul>
+  Aplicações utilizadas no deploy e API
+  <li>
+    <a href="https://convem-ps.vercel.app/" terget="_blank">Vercel</a>
+  </li>
+  <li>MockAPI</li>
+</ul>
