@@ -25,7 +25,7 @@ export class BoxComponent implements OnInit {
 
   //Funções
   button_click(){
-    if(this.value == 'sim'){
+    if(this.value.toLowerCase() == 'sim'){
       this.getData('sim')
       setTimeout(() => {
         for(let answer of this.interface){
