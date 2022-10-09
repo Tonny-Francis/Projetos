@@ -8,10 +8,10 @@ import { Data } from '../interfaces/Data';
   providedIn: 'root'
 })
 export class ApiService {
-  private apiUrl: string = 'https://convemapi.herokuapp.com/sim'
+  private apiUrl: string = 'https://633f2d4c0dbc3309f3c64f7d.mockapi.io/api/v1/'
   constructor(private http: HttpClient) { }
 
   getAll(answer: string): Observable<Data[]>{
-    return this.http.get<Data[]>(this.apiUrl)
+    return this.http.get<Data[]>(this.apiUrl+answer)
   }
 }

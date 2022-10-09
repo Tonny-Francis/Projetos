@@ -1,4 +1,4 @@
 export interface Data{
-  data: string
+  answer: string
   id: number
 }
