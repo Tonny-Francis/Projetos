@@ -21,9 +21,12 @@ export class BoxComponent implements OnInit {
 
   //Funções
   button_click(){
-    console.log('click')
+    if(this.value == 'sim')
+      console.log(this.getData('sim'))
+    else
+      console.log(this.getData('nao'))
   }
-  getData(): void{
-    this.apiservice.getAll().subscribe((data) => this.interface = data)
+  getData(answer: string): void{
+    this.apiservice.getAll(answer).subscribe((data) => this.interface = data)
   }
 }

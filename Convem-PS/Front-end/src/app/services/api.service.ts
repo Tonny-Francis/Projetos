@@ -8,10 +8,10 @@ import { Data } from '../interfaces/Data';
   providedIn: 'root'
 })
 export class ApiService {
-  private apiUrl: string = 'url'
+  private apiUrl: string = 'https://convemapi.herokuapp.com/sim'
   constructor(private http: HttpClient) { }
 
-  getAll(): Observable<Data[]>{
+  getAll(answer: string): Observable<Data[]>{
     return this.http.get<Data[]>(this.apiUrl)
   }
 }
