@@ -51,3 +51,11 @@ pergunta simples e dependendo da sua resposta realizar uma ação, utilizando o 
   }
   </pre>
 </code>
+<h3>API</h3>
+<p>Na parte da API temos endpoints que correspondem as repostas "sim" e "nao", a função a cima e que determina em qual endpoint vai fazer a requisição, os endpoints são:
+  <ul>
+    <li>https://633f2d4c0dbc3309f3c64f7d.mockapi.io/api/v1/sim</li>
+    <li>https://633f2d4c0dbc3309f3c64f7d.mockapi.io/api/v1/nao</li>
+  </ul>
+  Como podem verificar a primeira tem uma resposta "sucesso" e a outra "erro"
+</p>
