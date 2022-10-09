@@ -59,3 +59,10 @@ pergunta simples e dependendo da sua resposta realizar uma ação, utilizando o 
   </ul>
   Como podem verificar a primeira tem uma resposta "sucesso" e a outra "erro"
 </p>
+<h2>Detalhes da Pasta Back-end</h2>
+<p>Os arquivos encontrados nessa pasta referir-se a construção de uma API própria, mas recebi erro de cors ao obter a reposta da API é como estava sem tempo de dar continuidade optei por utilizar o MockAPI, esses arquivos não encontram-se em utilização no site Convem-PS mas ainda está hospeda. Os erros estão relacionados ao endereço de acesso, o serviço que atualmente hospeda essa API é o Heroku e seus endpoints são:
+  <ul>
+    <li>https://convemapi.herokuapp.com/sim</li>
+    <li>https://convemapi.herokuapp.com/nao</li>
+  </ul>
+  </p>
