@@ -9,7 +9,7 @@ pergunta simples e dependendo da sua resposta realizar uma ação, utilizando o 
 <ul>
   Aplicações utilizadas no deploy e API
   <li>
-    <a href="https://convem-ps.vercel.app/" terget="_blank">Vercel</a>
+    <a href="https://convem-ps.vercel.app/" target="_blank">Vercel</a>
   </li>
   <li>MockAPI</li>
 </ul>
