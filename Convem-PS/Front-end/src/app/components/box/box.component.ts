@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { ApiService } from 'src/app/services/api.service';
-import { Data } from 'src/app/interfaces/Data';
+import { Answer } from 'src/app/interfaces/Answer';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogComponent } from '../dialog/dialog.component';
 
@@ -15,7 +15,8 @@ export class BoxComponent implements OnInit {
   //Variáveis para interpolação
   empresa: string = 'Convem';
   value: string = '';
-  interface: Data[] = [];
+  error_messager: string = 'Erro'
+  sucesso: string ='Sucesso'
 
   constructor(
     private apiservice: ApiService,
@@ -24,41 +25,34 @@ export class BoxComponent implements OnInit {
   ngOnInit(): void {}
 
   //Funções
-  button_click(){
-    if(this.value.toLowerCase() == 'sim'){
-      this.getData('sim')
-      setTimeout(() => {
-        for(let answer of this.interface){
-          if(answer.answer == 'sucesso')
-            this.openDialog()
-          else
-            alert('Erro Database')
-        }
-      }, 1000);
-    }
-    else{
-      this.getData('nao')
-      setTimeout(() => {
-        for(let answer of this.interface){
-          if(answer.answer == 'erro')
-            alert('Erro')
-          else
-            alert('Erro Database')
-        }
-      }, 1000);
+  Enviar(){
+    if(!this.value)
+      alert(this.error_messager)
+    else
+      this.addAnswer()
+  }
+
+  addAnswer(): void{
+    const answer:Answer = {
+      answer: this.value.toLowerCase()
     }
 
+    this.apiservice.postAll(answer)
+      .then(answer => {
+        if(answer.answer == this.sucesso)
+          this.openDialog()
+        else
+          alert(this.error_messager)
+      })
   }
-  getData(answer: string): void{
-    this.apiservice.getAll(answer).subscribe((data) => this.interface = data)
-  }
+
   openDialog(): void {
     const dialogRef = this.dialog.open(DialogComponent, {
       width: '350px',
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
+
     });
   }
 }
