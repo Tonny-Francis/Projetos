@@ -1,0 +1,15 @@
+#container{
+  background-color: #23243C;
+  color: white;
+  text-align: center;
+  width: 250px;
+  height: 300px;
+  border-radius: 25px;
+}
+#logo{
+  padding-top: 20px;
+}
+#text{
+  font-size: 12px;
+}
+
