@@ -5,13 +5,26 @@
   <div id="text">
     <h1>{{ title }}</h1>
   </div>
-  <div id="lineedits">
-    <p id="field_1">{{ fields[0] }}</p>
-    <input type="text" name="" id="">
-    <p id="field_2">{{ fields[1] }}</p>
-    <input type="text" name="" id="">
-  </div>
-  <div id="button">
-    <input type="button" value="{{title}}">
-  </div>
+  <form>
+    <div class="single-input">
+      <input type="text" name="email" id="user" class="input" required  autocomplete="off" maxlength="15">
+      <label for="email">User</label>
+    </div>
+    <div class="single-input">
+      <input type="password" name="password" id="password" class="input" required autocomplete="off" maxlength="12">
+      <label for="password">Password</label>
+    </div>
+    <div>
+      <a href="" id="forgot">Forgot Password</a>
+    </div>
+    <div>
+      <div>
+        <input type="button" value="{{title}}" class="buttons" id="button_login">
+      </div>
+      <label for="or" id="or">Or</label>
+      <div>
+        <input type="button" value="Sing-in" class="buttons" id="button_sing">
+      </div>
+    </div>
+  </form>
 </div>
