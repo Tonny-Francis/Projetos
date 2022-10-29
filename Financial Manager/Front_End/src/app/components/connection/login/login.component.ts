@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class LoginComponent implements OnInit {
   title: string = 'Login'
   fields: string[] = ['Email', 'Password', 'Forgot Password']
-  logo: string = '../../assets/Logo.png'
+  logo: string = '../../../../assets/Logo.png'
   constructor() { }
 
   ngOnInit(): void {
