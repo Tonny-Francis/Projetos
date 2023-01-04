@@ -1,0 +1,210 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+
+.conteiner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+.conteiner h1 {
+  font-size: 36pt;
+  background: linear-gradient(
+      45deg,
+      rgb(116 190 168),
+      rgb(115 204 73)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.forms{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input{
+  width: 250px;
+  height: 25px;
+  text-align: center;
+  background-color: #FAF8F8;
+  border: none;
+  outline: 0;
+  color: black;
+  border-bottom: 2px solid #2D7B64;
+}
+.single-input{
+  position: relative;
+  margin-bottom: 30px;
+}
+.single-input label{
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  color: rgb(43, 143, 110);
+  cursor: text;
+  transition: 0.2s ease-in-out;
+  font-size: 14px;
+}
+.input:focus ~ label,
+.input:valid ~ label{
+  transform: translateY(-24px);
+  font-size: 14px;
+}
+.button {
+  width: 100px;
+  height: 30px;
+  border-radius: 7px;
+  cursor: pointer;
+  border: solid 1px white;
+  background: linear-gradient(
+    45deg,
+    rgb(116 190 168),
+    rgb(115 204 73)
+  );
+  color: white;
+  font-size: 12pt;
+  font-family: 'Times New Roman', Times, serif;
+}
+.button:hover {
+  border: 1px;
+  background: linear-gradient(
+    45deg,
+    rgb(115 204 73),
+    rgb(116 190 168)
+  );
+  transition: 0.5s;
+}
+.middle {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 350px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.middle::before {
+  content: '';
+  width: 350px;
+  height: 1px;
+  background: #B9BBBE;
+  transform: translateY(5px);
+  transition: 0.2s;
+}
+.conections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.conections-bt {
+  width: 184px;
+  height: 42px;
+}
+.google-btn {
+  width: 184px;
+  height: 42px;
+  margin: 15px;
+  background-color: #4285f4;
+  border-radius: 2px;
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,.25);
+}
+.google-icon-wrapper {
+  position: absolute;
+  margin-top: 1px;
+  margin-left: 1px;
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: white;
+}
+.google-icon {
+  position: absolute;
+  margin-top: 11px;
+  margin-left: 11px;
+  width: 18px;
+  height: 18px;
+}
+.google-btn-text {
+  float: right;
+  margin: 11px 11px 0 0;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  font-family: "Roboto";
+}
+.google-btn:hover {
+  box-shadow: 0 0 6px #4285f4;
+}
+.google-btn:active {
+  background: #1669F2;
+}
+.apple-btn {
+  width: 184px;
+  height: 42px;
+  background-color: black;
+  border-radius: 2px;
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,.25);
+}
+.apple-icon-wrapper {
+  position: absolute;
+  margin-top: 1px;
+  margin-left: 1px;
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: white;
+}
+.apple-icon {
+  position: absolute;
+  margin-top: 11px;
+  margin-left: 11px;
+  width: 18px;
+  height: 18px;
+}
+.apple-btn-text {
+  float: right;
+  margin: 11px 11px 0 0;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  font-family: "Roboto";
+}
+.apple-btn:hover {
+  box-shadow: 0 0 6px black;
+}
+.apple-btn:active {
+  background: black;
+}
+.sign-in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sign-in-text {
+  font-size: 12pt;
+  padding-right: 5px;
+}
+.sign-in-link {
+  text-decoration: none;
+  background: linear-gradient(
+      45deg,
+      rgb(116 190 168),
+      rgb(115 204 73)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.sign-in-link:hover {
+  text-decoration: none;
+  background: linear-gradient(
+      45deg,
+      rgb(115 204 73),
+      rgb(116 190 168)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
